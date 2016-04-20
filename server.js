@@ -1,0 +1,17 @@
+var webpack = require('webpack');
+var WebpackDevServer = require('webpack-dev-server');
+var config = require('./webpack.config');
+
+new WebpackDevServer(webpack(config), {
+  publicPath: config.output.publicPath,
+  hot: true,
+  historyApiFallback: true,
+  stats: 'errors-only',
+  headers: { 'Access-Control-Allow-Origin': '*' }
+}).listen(1110, 'localhost', function (err, result) {
+  if (err) {
+    return console.log(err);
+  }
+
+  console.log('Listening at http://localhost:1110/');
+});
