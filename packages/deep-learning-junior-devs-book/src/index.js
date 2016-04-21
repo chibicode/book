@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import './styles/index.css'
 
 export default class Book extends Component {
   static contextTypes = {
