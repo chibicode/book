@@ -1,11 +1,6 @@
 var path = require('path')
+var postcssCssnext = require('postcss-cssnext')
 var postcssImport = require('postcss-import')
-var postcssCustomMedia = require('postcss-custom-media')
-var postcssCustomProperties = require('postcss-custom-properties')
-var postcssCalc = require('postcss-calc')
-var postcssColorFunction = require('postcss-color-function')
-var postcssDiscardComments = require('postcss-discard-comments')
-var autoprefixer = require('autoprefixer')
 
 module.exports = {
   entry: [
@@ -30,12 +25,7 @@ module.exports = {
   postcss: function (webpack) {
     return [
       postcssImport({ addDependencyTo: webpack }),
-      postcssCustomMedia,
-      postcssCustomProperties,
-      postcssCalc,
-      postcssColorFunction,
-      postcssDiscardComments,
-      autoprefixer
+      postcssCssnext
     ]
   }
 }
