@@ -1,13 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router'
+import PageTitle from './PageTitle'
+import Section from './Section'
 
-const Depth1 = () => (
+const Depth1 = () =>
   <div>
-    <div className='max-width-3'>
-      <h1 className='mt0'>Depth 1: Matrix Component</h1>
-    </div>
-    <div>
-    </div>
+    <p>
+      <Link to='/'>← Back to Home</Link>
+    </p>
+    <PageTitle>
+      Depth 1: Matrix Component
+    </PageTitle>
+    <Section id={ 1 } />
   </div>
-)
 
 export default Depth1

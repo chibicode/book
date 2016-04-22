@@ -20,6 +20,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loaders: ['style', 'css', 'postcss']
+    }, {
+      test: /\.md$/,
+      loaders: ['html', 'markdown']
     }]
   },
   postcss: function (webpack) {
