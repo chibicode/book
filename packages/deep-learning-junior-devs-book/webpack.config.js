@@ -16,13 +16,16 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
-      exclude: /node_modules/
+      exclude: [/\/node_modules\//, /\/snippets\//]
     }, {
       test: /\.css$/,
       loaders: ['style', 'css', 'postcss']
     }, {
       test: /\.md$/,
       loaders: ['html', 'markdown']
+    }, {
+      test: /\/snippets\//,
+      loaders: ['raw']
     }]
   },
   postcss: function (webpack) {

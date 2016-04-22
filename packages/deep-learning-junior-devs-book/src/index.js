@@ -2,6 +2,7 @@ import React, { createElement, Component, PropTypes } from 'react'
 import Routes from './components/Routes'
 import './styles/index.css'
 
+// TODO: Need to export other little components users can use
 export default class Book extends Component {
   static propTypes = {
     components: PropTypes.object

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import PageTitle from './PageTitle'
 import Section from './Section'
+import Snippet from './Snippet'
 
 const Depth1 = () =>
   <div>
@@ -12,6 +13,8 @@ const Depth1 = () =>
       Depth 1: Matrix Component
     </PageTitle>
     <Section id={ 1 } />
+    <Snippet id={ 1 } />
+    <Section id={ 2 } />
   </div>
 
 export default Depth1
