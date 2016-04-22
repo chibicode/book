@@ -16,6 +16,7 @@ const Depth1 = () =>
     <Snippet id={1} />
     <Section id={2} hint={true} />
     <Section id={3} />
+    <Snippet id={2} lang={ 'jsx' } />
   </div>
 
 export default Depth1
