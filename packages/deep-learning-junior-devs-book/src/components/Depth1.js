@@ -12,9 +12,10 @@ const Depth1 = () =>
     <PageTitle>
       Depth 1: Matrix Component
     </PageTitle>
-    <Section id={ 1 } />
-    <Snippet id={ 1 } />
-    <Section id={ 2 } />
+    <Section id={1} />
+    <Snippet id={1} />
+    <Section id={2} hint={true} />
+    <Section id={3} />
   </div>
 
 export default Depth1
