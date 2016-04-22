@@ -1,4 +1,5 @@
 import React, { createElement, Component, PropTypes } from 'react'
+import Routes from './components/Routes'
 import './styles/index.css'
 
 export default class Book extends Component {
@@ -19,15 +20,6 @@ export default class Book extends Component {
   }
 
   render () {
-    return (
-      <div style={{ padding: '50px 100px 100px' }}>
-        <div className='max-width-3'>
-          <h1 className='mt0'>Depth 2.1: Matrix Component</h1>
-        </div>
-        <div>
-          Hello World!
-        </div>
-      </div>
-    )
+    return <Routes />
   }
 }
