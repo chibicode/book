@@ -1,16 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
 @import './bassplate';
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato",SF UI Text,Roboto,Helvetica Neue,Helvetica,sans-serif;
   color: #444;
 }
 
 pre {
   border: 1px solid #eee;
   overflow-y: auto;
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Fira Mono',Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 pre code {
