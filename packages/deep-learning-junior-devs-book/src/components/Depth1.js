@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import PageTitle from './PageTitle'
 import Section from './Section'
 import Snippet from './Snippet'
+import Depth1Matrix1 from './Depth1Matrix1'
 
 const Depth1 = () =>
   <div>
@@ -17,6 +18,13 @@ const Depth1 = () =>
     <Section id={2} hint={true} />
     <Section id={3} />
     <Snippet id={2} lang={ 'jsx' } />
+    <Section id={4} />
+    <Depth1Matrix1 data={
+      [
+        [1, 2, 3],
+        [4, 5, 6]
+      ]
+    } />
   </div>
 
 export default Depth1
