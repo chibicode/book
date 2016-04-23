@@ -17,14 +17,17 @@ const Depth1 = () =>
     <Snippet id={1} />
     <Section id={2} hint={true} />
     <Section id={3} />
-    <Snippet id={2} lang={ 'jsx' } />
+    <Snippet id={2} />
     <Section id={4} />
-    <Depth1Matrix1 data={
-      [
-        [1, 2, 3],
-        [4, 5, 6]
-      ]
-    } />
+    <div className='mb2'>
+      <Depth1Matrix1 data={
+        [
+          [1, 2, 3],
+          [4, 5, 6]
+        ]
+      } />
+    </div>
+    <Snippet id={3} />
   </div>
 
 export default Depth1
