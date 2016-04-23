@@ -1,6 +1,8 @@
 // Slimmed down version of https://github.com/conorhastings/react-syntax-highlighter
 // ...But it doesn't quite work yet. See my comment:
 // https://github.com/isagalaev/highlight.js/issues/931#issuecomment-213838285
+// Also see this:
+// https://github.com/wooorm/lowlight/pull/1#issuecomment-213849625
 import lowlight from 'lowlight/lib/core'
 import highlightLangJs from 'highlight.js/lib/languages/javascript'
 import highlightLangXml from 'highlight.js/lib/languages/xml'
