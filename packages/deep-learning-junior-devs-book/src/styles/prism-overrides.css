@@ -1,13 +1,18 @@
 code[class*="language-"],
 pre[class*="language-"] {
-  background: #f9f9f9;
   font-family: 'Fira Mono',Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+code[class*="language-"] {
+  background: none;
 }
 
 pre[class*="language-"] {
   margin: 0 0 1em;
-  border: 1px solid #eee;
+  border-radius: 3px;
+  border: 1px solid rgba(225, 235, 255, 1);
   overflow-y: auto;
+  background: rgba(225, 235, 255, 0.2);
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
