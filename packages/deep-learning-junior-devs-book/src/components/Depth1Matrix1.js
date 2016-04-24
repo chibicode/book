@@ -7,10 +7,10 @@ const Depth1Matrix1 = ({ data }) =>
     <tbody>
       {
         data.map((row, i) =>
-          <tr key={i}>
+          <tr key={row.toString()}>
             {
               row.map((item, j) =>
-                <td className={styles.matrixCell} key={`${i},${j}`}>
+                <td className={styles.matrixCell} key={item}>
                   {item}
                 </td>)
             }
