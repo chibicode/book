@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import PageTitle from './PageTitle'
 import Section from './Section'
 import Snippet from './Snippet'
+import ComponentSnippet from './ComponentSnippet'
 import Depth1Matrix1 from './Depth1Matrix1'
 
 const Depth1 = () =>
@@ -27,7 +28,7 @@ const Depth1 = () =>
         ]
       } />
     </div>
-    <Snippet id={3} />
+    <ComponentSnippet name='Depth1Matrix1' />
   </div>
 
 export default Depth1
