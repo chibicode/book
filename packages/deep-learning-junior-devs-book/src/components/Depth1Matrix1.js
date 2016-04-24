@@ -10,7 +10,7 @@ const Depth1Matrix1 = ({ data }) =>
           <tr key={i}>
             {
               row.map((item, j) =>
-                <td className={`py1 px2 ${styles.matrixCell}`} key={`${i},${j}`}>
+                <td className={styles.matrixCell} key={`${i},${j}`}>
                   {item}
                 </td>)
             }

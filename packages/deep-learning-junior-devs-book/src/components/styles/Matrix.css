@@ -1,3 +1,4 @@
 .matrixCell {
   border: 1px solid #ccc;
+  composes: px2 py1 from "../../styles/bassplate.css";
 }
