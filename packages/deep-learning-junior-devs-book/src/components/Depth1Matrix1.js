@@ -4,11 +4,11 @@ const Depth1Matrix1 = ({ data }) =>
   <table style={{ borderSpacing: 0, borderCollapse: 'collapse' }}>
     <tbody>
       {
-        data.map((row) =>
-          <tr>
+        data.map((row, i) =>
+          <tr key={ i }>
             {
-              row.map((item) =>
-                <td className='py1 px2 border'>
+              row.map((item, j) =>
+                <td className='py1 px2 border' key={ `${i},${j}` }>
                   { item }
                 </td>)
             }

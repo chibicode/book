@@ -1,18 +1,13 @@
 import React from 'react'
-import SyntaxHighlighter from './SyntaxHighlighter'
-import { tomorrow } from 'react-syntax-highlighter/dist/styles'
+import { PrismCode } from 'react-prism'
 
-// TODO: Use recompose so this can be injectable
-const languageToExtension = {
-  javascript: 'js',
-  jsx: 'jsx'
-}
-
-const Snippet = ({ id, lang = 'javascript' }) =>
+const Snippet = ({ id }) =>
   <div className='max-width-3'>
-    <SyntaxHighlighter language={lang} style={tomorrow} className='rounded'>
-      { require(`../snippets/${id}.${languageToExtension[lang]}`) }
-    </SyntaxHighlighter>
+    <pre className='rounded'>
+      <PrismCode className='language-javascript'>
+        { require(`../snippets/${id}.js`) }
+      </PrismCode>
+    </pre>
   </div>
 
 export default Snippet

@@ -1,18 +1,10 @@
 @import './bassplate';
+@import './duotone-darklake.light.css';
+@import './prism-overrides.css';
 
 body {
   font-family: "Lato",SF UI Text,Roboto,Helvetica Neue,Helvetica,sans-serif;
   color: #444;
-}
-
-pre {
-  border: 1px solid #eee;
-  overflow-y: auto;
-  font-family: 'Fira Mono',Consolas, "Liberation Mono", Menlo, Courier, monospace;
-}
-
-pre code {
-  background: inherit;
 }
 
 p, dl, ol, ul, pre, blockquote {

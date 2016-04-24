@@ -1,0 +1,17 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  background: #f9f9f9;
+  font-family: 'Fira Mono',Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+pre[class*="language-"] {
+  margin: 0 0 1em;
+  border: 1px solid #eee;
+  overflow-y: auto;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background-color: highlight;
+  color: highlighttext;
+}
