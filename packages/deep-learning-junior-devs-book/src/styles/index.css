@@ -18,3 +18,8 @@ code {
   display: inline-block;
   padding: 0.25em 0.5em;
 }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
