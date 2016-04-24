@@ -16,7 +16,7 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
-      exclude: [/node_modules/, /snippets/]
+      exclude: [/node_modules/]
     }, {
       test: /\.css$/,
       loaders: ['style', 'css', 'postcss'],
@@ -24,12 +24,6 @@ module.exports = {
     }, {
       test: /components(.)+\.css$/,
       loaders: ['style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss']
-    }, {
-      test: /\.md$/,
-      loaders: ['html', 'markdown']
-    }, {
-      test: /snippets/,
-      loaders: ['raw']
     }]
   },
   postcss: function (webpack) {
