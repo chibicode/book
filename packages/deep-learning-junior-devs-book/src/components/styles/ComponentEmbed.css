@@ -1,0 +1,3 @@
+.container {
+  composes: mb2 from "../../styles/bassplate.css";
+}
