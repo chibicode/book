@@ -1,13 +1,11 @@
 import React from 'react'
-import { PrismCode } from 'react-prism'
+import Prism from './Prism'
 
 const Snippet = ({ id }) =>
   <div className='max-width-3'>
-    <pre className='rounded'>
-      <PrismCode className='language-javascript'>
-        { require(`../snippets/${id}.js`) }
-      </PrismCode>
-    </pre>
+    <Prism>
+      {require(`../snippets/${id}.js`)}
+    </Prism>
   </div>
 
 export default Snippet
