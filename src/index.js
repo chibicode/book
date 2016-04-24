@@ -2,22 +2,34 @@ import React from 'react'
 import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import Book from 'deep-learning-junior-devs-book'
+import components from './allComponents'
 
-// TODO: For **MY** development, hot loading deep-learning-junior-devs-book is the way to go,
-// but for the user hot loading needs to listen to ./components. Probably should separate
-// this index.js file into two files later.
-import components from './components'
+const root = document.getElementById('root')
 
-render(<AppContainer component={Book} props={{ components }}/>, document.getElementById('root'))
+render(<AppContainer component={Book} props={{ components }}/>, root)
 
 if (module.hot) {
-  module.hot.accept('deep-learning-junior-devs-book', () => {
-    render(
-      <AppContainer
-        component={require('deep-learning-junior-devs-book').default}
-        props={{ components }}
-      />,
-      document.getElementById('root')
-    )
-  })
+  // Duplicate code, but otherwise you'll be calling require()
+  // with a dynamic arg, which will trigger a warning
+  if (__DEV__) {
+    module.hot.accept('deep-learning-junior-devs-book', () => {
+      render(
+        <AppContainer
+          component={require('deep-learning-junior-devs-book').default}
+          props={{ components }}
+        />,
+        root
+      )
+    })
+  } else {
+    module.hot.accept('./allComponents', () => {
+      render(
+        <AppContainer
+          component={require('./allComponents').default}
+          props={{ components }}
+        />,
+        root
+      )
+    })
+  }
 }

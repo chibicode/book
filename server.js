@@ -1,6 +1,6 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+var webpack = require('webpack')
+var WebpackDevServer = require('webpack-dev-server')
+var config = require('./webpack.config')
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
@@ -10,8 +10,8 @@ new WebpackDevServer(webpack(config), {
   headers: { 'Access-Control-Allow-Origin': '*' }
 }).listen(1110, 'localhost', function (err, result) {
   if (err) {
-    return console.log(err);
+    return console.log(err)
   }
 
-  console.log('Listening at http://localhost:1110/');
-});
+  console.log('Listening at http://localhost:1110/')
+})

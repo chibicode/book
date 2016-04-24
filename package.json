@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "node server.js",
+    "dev": "DEV=1 node server.js",
     "check": "npm-check -u"
   },
   "devDependencies": {

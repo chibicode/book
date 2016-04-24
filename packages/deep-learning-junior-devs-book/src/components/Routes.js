@@ -5,7 +5,7 @@ import Home from './Home'
 import Depth1 from './Depth1'
 
 const Routes = () => (
-  <Router history={ browserHistory }>
+  <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
       <Route path='/depth/1' component={Depth1} />
