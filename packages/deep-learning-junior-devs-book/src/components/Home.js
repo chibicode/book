@@ -5,7 +5,7 @@ import PageTitle from './PageTitle'
 const Home = () =>
   <div>
     <PageTitle>
-      Deep Learning for Junior Developers
+      Deep Learning for Junior Developers, in React.js
     </PageTitle>
     <div>
       This site is under construction.
