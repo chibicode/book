@@ -1,0 +1,10 @@
+.hint {
+  composes: max-width-2 mb2 hint from '../../styles/bassplate.css';
+  padding: 0.5em 1em;
+  border: 1px solid #eee;
+  border-left-width: 1em;
+}
+
+.hintHeader {
+  composes: mt1 bold from '../../styles/bassplate.css';
+}

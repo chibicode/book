@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router'
 import PageTitle from './PageTitle'
-import Section from './Section'
 import Snippet from './Snippet'
 import ComponentEmbed from './ComponentEmbed'
 import ComponentSnippet from './ComponentSnippet'
 import Depth1Matrix1 from './Depth1Matrix1'
+import Hint from './Hint'
+import Text from './Text'
 
 const Depth1 = () =>
   <div>
@@ -15,12 +16,20 @@ const Depth1 = () =>
     <PageTitle>
       Depth 1: Matrix Component
     </PageTitle>
-    <Section id={1} />
+    <Text>{`
+      The first key concept we'll talk about is **two dimensional (2D) arrays**. In JavaScript, this is a 2D array:
+    `}</Text>
     <Snippet id={1} />
-    <Section id={2} hint />
-    <Section id={3} />
+    <Hint>{`
+      We're using \`const\` instead of \`var\` - \`const\` is like \`var\`, but you can only assign the value once.
+    `}</Hint>
+    <Text>{`
+      In Math, a 2D array is called a **Matrix** (plural: **Matrices**). In this depth, we'll implement a React component that renders a matrix. The code will look like this:
+    `}</Text>
     <Snippet id={2} />
-    <Section id={4} />
+    <Text>{`
+      And the rendered React component looks like this:
+    `}</Text>
     <ComponentEmbed>
       <Depth1Matrix1 data={[
         [1, 2, 3],
