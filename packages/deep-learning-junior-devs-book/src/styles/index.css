@@ -18,10 +18,3 @@ code {
   display: inline-block;
   padding: 0.25em 0.5em;
 }
-
-/* TODO: Move to src/styles/Section.css after installing CSS modules */
-.hint {
-  padding: 0.5em 1em;
-  border: 1px solid #eee;
-  border-left-width: 1em;
-}

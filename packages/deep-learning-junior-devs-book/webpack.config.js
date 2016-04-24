@@ -16,15 +16,19 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
-      exclude: [/\/node_modules\//, /\/snippets\//]
+      exclude: [/node_modules/, /snippets/]
     }, {
       test: /\.css$/,
-      loaders: ['style', 'css', 'postcss']
+      loaders: ['style', 'css', 'postcss'],
+      exclude: [/components/]
+    }, {
+      test: /components(.)+\.css$/,
+      loaders: ['style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss']
     }, {
       test: /\.md$/,
       loaders: ['html', 'markdown']
     }, {
-      test: /\/snippets\//,
+      test: /snippets/,
       loaders: ['raw']
     }]
   },
