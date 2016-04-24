@@ -52,9 +52,11 @@ const Depth1 = () =>
         <Matrix data={data} />
       `}
     </Snippet>
-    <Text>{`
-      And the rendered React component looks like this:
-    `}</Text>
+    <Text>
+      {`
+        And the rendered React component looks like this:
+      `}
+    </Text>
     <ComponentEmbed>
       <Depth1Matrix1 data={[
         [1, 2, 3],
