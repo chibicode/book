@@ -30,7 +30,7 @@ const Depth1 = () =>
     </Snippet>
     <Hint>
       {`
-        We're using \`const\` instead of \`var\` - \`const\` is like \`var\`, but you can only assign the value once.
+        We're using \`const\` instead of \`var\` - \`const\` is like \`var\`, but you can only assign the value once. [Learn more here](https://github.com/lukehoban/es6features#let--const).
       `}
     </Hint>
     <SectionHeading>
@@ -73,7 +73,15 @@ const Depth1 = () =>
         This is just to make sure that the code is working. If you implement it correctly, it should show up below:
       `}
     </Text>
-    <ComponentEmbed filename='./solutions/Depth1.Matrix1' />
+    {/* TODO: This should be toggle-able with the solution */}
+    <ComponentEmbed filename='./solutions/Depth1.Matrix.1' />
+    <Hint>
+      {`
+        We're using functional stateless React components. If you don't know what that means, google for it or watch [this video on Egghead.io](https://egghead.io/lessons/react-building-stateless-function-components-new-in-react-0-14).
+
+        We're also using ES6 function shorthand \`() => ...\` as well as \`import\` and \`export\`. You can [learn about them here](https://github.com/lukehoban/es6features#let--const).
+      `}
+    </Hint>
   </div>
 
 export default Depth1

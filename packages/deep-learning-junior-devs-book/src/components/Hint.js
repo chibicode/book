@@ -4,7 +4,7 @@ import styles from './styles/Hint.css'
 
 const Hint = ({ children }) =>
   <div className={styles.hint}>
-    <div className={styles.hintHeader}>Hint</div>
+    <div className={styles.hintHeader}>Note</div>
     <Markdown>
       {children}
     </Markdown>
