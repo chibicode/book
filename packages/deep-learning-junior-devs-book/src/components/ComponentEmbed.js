@@ -13,7 +13,7 @@ const ComponentEmbed = ({ filename, ...others }) => {
     </div>
   } else {
     // TODO: Implement styles.emptyContainer
-    return <div className={styles.container}>
+    return <div className={styles.containerEmpty}>
       File Not Found
     </div>
   }
