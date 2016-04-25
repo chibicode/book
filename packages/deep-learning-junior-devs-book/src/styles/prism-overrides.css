@@ -5,6 +5,7 @@ pre[class*="language-"] {
 
 code[class*="language-"] {
   background: none;
+  padding: 0;
 }
 
 pre[class*="language-"] {

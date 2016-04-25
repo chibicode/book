@@ -3,7 +3,6 @@ import { Link } from 'react-router'
 import PageTitle from './PageTitle'
 import Snippet from './Snippet'
 import ComponentEmbed from './ComponentEmbed'
-import Depth1Matrix1 from './Depth1Matrix1'
 import Hint from './Hint'
 import Text from './Text'
 import SectionHeading from './SectionHeading'
@@ -57,17 +56,24 @@ const Depth1 = () =>
         And the rendered React component looks like this:
       `}
     </Text>
-    <ComponentEmbed>
-      <Depth1Matrix1 data={[
-        [1, 2, 3],
-        [4, 5, 6]
-      ]} />
-    </ComponentEmbed>
+    <ComponentEmbed filename='./Depth1Matrix1' data={[
+      [1, 2, 3],
+      [4, 5, 6]
+    ]} />
     <Text>
       {`
         Let's implement this component. First, <mark>inside \`src/components\` file, create \`Depth1.Matrix.1.js\`. Then add the following code.</mark>
       `}
     </Text>
+    <Snippet>
+      {require('!!raw!./solutions/Depth1.Matrix.1.js')}
+    </Snippet>
+    <Text>
+      {`
+        This is just to make sure that the code is working. If you implement it correctly, it should show up below:
+      `}
+    </Text>
+    <ComponentEmbed filename='./solutions/Depth1.Matrix1' />
   </div>
 
 export default Depth1
