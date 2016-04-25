@@ -63,6 +63,11 @@ const Depth1 = () =>
         [4, 5, 6]
       ]} />
     </ComponentEmbed>
+    <Text>
+      {`
+        Let's implement this component. First, <mark>inside \`src/components\` file, create \`Depth1.Matrix.1.js\`. Then add the following code.</mark>
+      `}
+    </Text>
   </div>
 
 export default Depth1

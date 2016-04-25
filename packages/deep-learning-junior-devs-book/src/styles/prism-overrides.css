@@ -1,6 +1,6 @@
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: 'Fira Mono',Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Source Code Pro",Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 
 code[class*="language-"] {

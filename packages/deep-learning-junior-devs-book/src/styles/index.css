@@ -1,6 +1,9 @@
 @import './bassplate';
 @import './duotone-darklake.light.css';
 @import './prism-overrides.css';
+/* https://github.com/chibicode/cssnext-material-design-colors/blob/master/index.css */
+/* https://www.google.com/design/spec/style/color.html#color-color-palette */
+@import 'cssnext-material-design-colors';
 
 body {
   font-family: "Lato",SF UI Text,Roboto,Helvetica Neue,Helvetica,sans-serif;
@@ -13,13 +16,23 @@ p, dl, ol, ul, pre, blockquote {
 
 code {
   border-radius: 3px;
-  font-family: 'Fira Mono', monospace;
-  background: #f3f3f3;
-  display: inline-block;
-  padding: 0.25em 0.5em;
+  font-family: "Source Code Pro",Menlo,Monaco,Consolas,"Courier New",monospace;
+  background: rgba(225, 235, 255, 0.5);
+  padding: 2px 4px;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+mark {
+  background: var(--md-yellow-100);
+  padding: 2px 0;
+  color: inherit;
+
+  & code {
+    background: inherit;
+    padding: 0;
+  }
 }
